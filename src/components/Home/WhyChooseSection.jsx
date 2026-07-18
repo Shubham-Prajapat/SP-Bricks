@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import whyImg from "../../assets/why-choose-img.png";
+import whyImg from "../../assets/bricks-bhtta.png";
 
 const features = [
   {

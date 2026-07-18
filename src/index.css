@@ -111,3 +111,24 @@ code {
 } */
 
 @import "tailwindcss";
+/* Swiper Pagination */
+
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ea580c;
+  opacity: 1;
+}
+
+body{
+  overflow-x: hidden;
+}

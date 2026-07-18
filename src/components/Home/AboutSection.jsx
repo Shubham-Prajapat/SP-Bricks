@@ -63,7 +63,7 @@ const AboutSection = () => {
             />
 
             <div className="absolute -bottom-6 left-6 bg-orange-500 text-white px-8 py-5 rounded-2xl shadow-xl">
-              <h3 className="text-3xl font-bold">15+</h3>
+              <h3 className="text-3xl font-bold">35+</h3>
               <p className="text-sm">Years Experience</p>
             </div>
           </motion.div>

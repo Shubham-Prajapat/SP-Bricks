@@ -1,23 +1,62 @@
-import { motion } from "framer-motion";
-import heroImg from "../../assets/hero-banner.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+
+import hero1 from "../../assets/hero-banner2.png";
+import hero2 from "../../assets/hero-banner3.png";
+import hero3 from "../../assets/hero-banner.png";
+
+const banners = [
+  {
+    id: 1,
+    image: hero1,
+    link: "/products",
+  },
+  {
+    id: 2,
+    image: hero2,
+    link: "/products",
+  },
+  {
+    id: 3,
+    image: hero3,
+    link: "/products",
+  },
+];
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full overflow-hidden">
-      <motion.a
-        href="/products" // Apna route ya link yaha do
-        initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-        whileHover={{ scale: 1.02 }}
-        className="block"
+    <section className="w-full overflow-hidden">
+      <Swiper
+  modules={[Autoplay, EffectFade, Pagination]}
+  effect="fade"
+  loop
+  speed={1200}
+  autoplay={{
+    delay: 4000,
+    disableOnInteraction: false,
+  }}
+  pagination={{ clickable: true }}
+  className="h-[220px] sm:h-[350px] md:h-[500px] lg:h-[650px]"
+>
+  {banners.map((banner) => (
+    <SwiperSlide key={banner.id}>
+      <a
+        href={banner.link}
+        className="w-full h-full flex items-center justify-center bg-white"
       >
         <img
-          src={heroImg}
-          alt="Hero Banner"
-          className="h-auto w-full object-cover"
+          src={banner.image}
+          alt="SP Bricks Banner"
+          className="w-full h-full object-contain"
         />
-      </motion.a>
+      </a>
+    </SwiperSlide>
+  ))}
+</Swiper>
     </section>
   );
 };
