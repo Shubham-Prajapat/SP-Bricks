@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
-import hero1 from "../../assets/hero-banner2.png";
-import hero2 from "../../assets/hero-banner3.png";
-import hero3 from "../../assets/hero-banner.png";
+import hero1 from "../../assets/sp-bricks-banner-1.png";
+import hero2 from "../../assets/sp-bricks-banner-2.png";
+import hero3 from "../../assets/sp-bricks-banner-3.png";
 
 const banners = [
   {
