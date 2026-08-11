@@ -32,7 +32,7 @@ const CartDrawer = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.35 }}
-            className="fixed top-0 right-0 w-full sm:w-[420px] h-screen bg-white shadow-2xl z-50 flex flex-col"
+            className="fixed top-0 right-0 w-full sm:w-[420px] h-screen bg-white shadow-2xl z-999 flex flex-col"
           >
             {/* Header */}
 
@@ -41,7 +41,7 @@ const CartDrawer = () => {
                 Shopping Cart
               </h2>
 
-              <button onClick={closeCart}>
+              <button onClick={closeCart} className="cursor-pointer" >
                 <X size={28} />
               </button>
             </div>
@@ -89,7 +89,7 @@ const CartDrawer = () => {
 
                     </div>
 
-                    <button
+                    <button className="cursor-pointer"
                       onClick={() => removeFromCart(item.id)}
                     >
                       <Trash2
@@ -120,7 +120,7 @@ const CartDrawer = () => {
               </div>
 
               <button
-                className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-xl font-semibold"
+                className="cursor-pointer w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-xl font-semibold"
               >
                 Proceed Enquiry
               </button>

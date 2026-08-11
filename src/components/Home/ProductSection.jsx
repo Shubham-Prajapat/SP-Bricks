@@ -135,7 +135,7 @@ const ProductCard = ({ item, index }) => {
         </button> */}
         <button
   onClick={() => addToCart(item, quantity)}
-  className="mt-6 w-full flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-xl transition duration-300 font-semibold"
+  className="cursor-pointer mt-6 w-full flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-xl transition duration-300 font-semibold"
 >
   <ShoppingCart size={20} />
   Add To Cart

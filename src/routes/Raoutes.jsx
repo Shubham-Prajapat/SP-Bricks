@@ -9,6 +9,8 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Gallery from "../pages/Gallery";
+import Register from "../pages/Register";
+import ForgotPassword from "../pages/ForgotPassword";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ export const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register/>,
+      },
+       {
+        path: "forgot-password",
+        element: <ForgotPassword/>,
       },
     ],
   },
