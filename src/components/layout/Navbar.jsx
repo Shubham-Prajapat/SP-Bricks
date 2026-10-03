@@ -208,13 +208,13 @@ const Navbar = () => {
 
             {/* Wishlist */}
 
-            <button
+            {/* <button
               type="button"
               className="flex items-center gap-3 text-[#1C1712]"
             >
               <FiHeart />
               Wishlist
-            </button>
+            </button> */}
 
             {/* Login */}
 

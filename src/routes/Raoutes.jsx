@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import Gallery from "../pages/Gallery";
 import Register from "../pages/Register";
 import ForgotPassword from "../pages/ForgotPassword";
+import Checkout from "../pages/Checkout";
 
 export const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
         path: "forgot-password",
         element: <ForgotPassword/>,
       },
+       {
+        path: "checkout",
+        element: <Checkout/>,
+      }
     ],
   },
 ]);
